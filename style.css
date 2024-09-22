@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --padding-inline-section:20px;
+}
+
+
+body{
+    font-family: "Outfit";
+}
+
+
+h1{
+    font-size: 3rem;
+}
+
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: "Outfit";
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color:black;
+}
+
+/* Classes */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline:auto ;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+.hover-link{
+    transition: 0.4s ease-in-out;
+}
+
+.hover-link:hover{
+    color: #1b225f;
+}
+
+/* Navber */
+
+.main-nav{
+    margin-top:10px;
+    justify-content: space-between;
+    padding: 18px;
+    position: relative;
+}
+
+.logo{
+    font-size: 100px;
+    width: auto;
+}
+
+.nav-link{
+    flex-basis: 730px;
+
+}
+.nav-link ul{
+   justify-content: end;
+   gap: 30px;
+}
+
+
+
+.up-button{
+    background-color: #2337E0;
+    border-radius: 20px;
+    font-size: 18;
+    color: #fff;
+    padding: 10px 24px;
+    box-shadow: 0 0 2px #2337E0;
+    transition: 0.4 ease-out;
+    text-align: center;
+}
+
+.up-button:hover{
+    background-color: #273192da;
+}
+
+.in-button{
+    border: 1px solid #2337E0;
+    border-radius: 20px;
+    font-size: 18;
+    padding: 10px 24px;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+
+/* Header */
+
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.left{
+    max-width: 40vw;
+}
+
+.left h1{
+    margin-top: 20px;
+}
+
+.send-but{
+    margin-top: 20px;
+}
+.right{
+    width: 100%;
+    height: 512px;
+    background-color: #E9E9E9;
+}
+
+
+
+/* Logo  */
+
+.companiion-logo{
+    margin-top: 100px;
+}
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+}
+
+
+.logos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.logo{
+    height: 46px;
+}
+
+
+
+/* product-section */
+
+.product-section{
+    padding: 80px 20px 0;
+    margin-top: 80px;
+}
+.product-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.product-header a{
+    margin-top: 20px;
+}
+
+.product-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+ .product-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 33%;
+}
+
+/* big-product-section */
+
+
+.big-product-section{
+    margin-top: 13%;
+    margin-left: 150px; 
+}
+
+
+.big-product-container{
+     gap: 50px;
+}
+
+
+.product-img img{
+    width: 600px;
+}
+
+.product-desc{
+    flex-direction: column;
+    gap: 20px;
+   
+}
+
+
+
+/* review-seciton */
+.review-seciton{
+    margin-top: 60px;
+}
+.review-header{
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-area{
+    justify-content: space-between;
+    margin-block: 30px;
+    flex-wrap: wrap;
+}
+
+.review-card{
+    width: 23%;
+    position: relative;
+    height: 300px;
+    background-color: darkgrey;
+    background:linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.9)), url(8.jpg);
+    background-size: cover;
+    transition: 0.2s ease-in;
+}
+
+.review-card:hover{
+    box-shadow: 0 0 9px #5aa5efda;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+
+}
+
+
+
+/* Add Section */
+.add-section{
+    margin-top: 120px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #CCE6FE;
+}
+
+.all-add{
+   padding-top: 30px;
+    flex-direction: column;
+    gap: 36px;
+}
+
+
+.add-container{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-container a{
+    background-color: #E9E9E9;
+}
+
+
+.all-add>a{
+    margin-bottom: 30px;
+}
+
+
+
+
+/* footer */
+footer{
+    padding-block:80px ;
+    background-color: #E9E9E9;
+    margin-top: 20px;
+}
+
+
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
